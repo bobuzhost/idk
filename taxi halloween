@@ -63,7 +63,7 @@ end)
        v.Parent.Parent:SetPrimaryPartCFrame(TweenValue.Value)
    end)
                
-   local OnTween = TweenService:Create(TweenValue, TweenInfoToUse, {Value=v.Parent.Parent.PrimaryPart.CFrame+Vector3.new(0,500,0)})
+   local OnTween = TweenService:Create(TweenValue, TweenInfoToUse, {Value=v.Parent.Parent.PrimaryPart.CFrame+Vector3.new(0,850,0)})
    OnTween:Play()
     OnTween.Completed:Wait()
         local TweenService = game:GetService("TweenService")
