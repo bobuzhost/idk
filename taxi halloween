@@ -105,9 +105,9 @@ end)
    end
    elseif game.Players.LocalPlayer.Character.Humanoid.Sit == false then
        game:GetService("ReplicatedStorage").Vehicles.GetNearestSpot:InvokeServer(game:GetService("Players").LocalPlayer.variables.carId.Value)
-       wait(0.5)
+       wait(1)
    game:GetService("ReplicatedStorage").Vehicles.EnterVehicleEvent:InvokeServer()
-   wait(0.5)
+   wait(1)
    end
    end)
     end
