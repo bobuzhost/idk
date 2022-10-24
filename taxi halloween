@@ -42,7 +42,7 @@ end)
              local OnTween = TweenService:Create(TweenValue, TweenInfoToUse, {Value=lo.CFrame+Vector3.new(0,4,0)})
              OnTween:Play()	
               OnTween.Completed:Wait()
-              wait(0.05)
+              wait(0.1)
              
                    ya.Parent.Parent.PrimaryPart.Anchored = true
                   wait(0.5)
