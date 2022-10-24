@@ -42,7 +42,7 @@ end)
              local OnTween = TweenService:Create(TweenValue, TweenInfoToUse, {Value=lo.CFrame+Vector3.new(0,4,0)})
              OnTween:Play()	
               OnTween.Completed:Wait()
-              wait(0.1)
+              wait(0.05)
              
                    ya.Parent.Parent.PrimaryPart.Anchored = true
                   wait(0.5)
@@ -105,9 +105,9 @@ end)
    end
    elseif game.Players.LocalPlayer.Character.Humanoid.Sit == false then
        game:GetService("ReplicatedStorage").Vehicles.GetNearestSpot:InvokeServer(game:GetService("Players").LocalPlayer.variables.carId.Value)
-       wait(1)
+       wait(0.5)
    game:GetService("ReplicatedStorage").Vehicles.EnterVehicleEvent:InvokeServer()
-   wait(1)
+   wait(0.5)
    end
    end)
     end
