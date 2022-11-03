@@ -1,9 +1,4 @@
-_G.support = function()
-    local supported = serv:Channel("Support Games")
-    local Bloxfruitname = game:GetService("MarketplaceService"):GetProductInfo(2753915549).Name; 
-    local Taxibossname = game:GetService("MarketplaceService"):GetProductInfo(7305309231).Name; 
-    
-    supported:Button(Bloxfruitname)
-    supported:Button(Taxibossname)
-end
-
+return{
+5327880096,
+920587237
+}
