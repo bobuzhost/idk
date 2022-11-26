@@ -1,0 +1,149 @@
+if _G.bo23b42uzke4234ym4234a ~= "manpls@do1n17dhui783bcra23784nd" then
+game:GetService('Players').LocalPlayer:Kick('Please relaunch')
+  end
+
+for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
+        if v.Name == "Discord" then
+            v:Destroy()
+        end
+      end        
+ local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+      
+      local win = DiscordLib:Window("BOBUZ Script Hub")
+      
+      local serv = win:Server("BOBUZ", "")
+      local webhookcheck =
+      is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+      secure_load and "Sentinel" or
+      KRNL_LOADED and "Krnl" or
+      SONA_LOADED and "Sona" or
+      "Others"
+      if webhookcheck == "Others" then
+        game:GetService("StarterGui"):SetCore("SendNotification",{
+          Title = "Alert (Due to your executor)", -- Required
+          Text = "Some scripts might not work for you.", -- Required
+        })
+      end
+      local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+    local url =
+      "https://discord.com/api/webhooks/1032626609016029264/Xh0MYQs-3nYDOHkoTt5G4zJNWwsCm3KxUZOrrTY2hgY8iH7U2dEdRzml6sNGDUytUgBh"
+    local data = {
+      ["embeds"] = {
+          {
+              ["title"] = "Script Executed in: "..GameName.."",
+              ["description"] = "Username: **" .. game.Players.LocalPlayer.Name.."** with **"..webhookcheck.."**\ Game Id: **" ..game.PlaceId.."**",
+              ["type"] = "rich",
+              ["color"] = tonumber(0x7269da),
+              ["image"] = {
+                  ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                      tostring(game:GetService("Players").LocalPlayer.Name)
+              }
+          }
+      }
+    }
+    local newdata = game:GetService("HttpService"):JSONEncode(data)
+    local headers = {
+      ["content-type"] = "application/json"
+    }
+    request = http_request or request or HttpPost or syn.request
+    local abcdefg = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+    request(abcdefg)
+  
+
+    
+    
+    
+    local home = serv:Channel("Home")
+    home:Label("Credits to all the respective owner.")
+    home:Label("If you want the script to be remove,submit a report.")
+    home:Button(
+      "Discord Invite",
+      function()
+        DiscordLib:Notification("Notification", "Copied to clipboard", "Okay!")
+    
+    
+        setclipboard("https://discord.gg/85gCks49c6")
+        task.wait()
+        request = http_request or request or HttpPost or syn.request
+            request({
+                Url = "http://127.0.0.1:6463/rpc?v=1",
+                Method = "POST",
+                Headers = {
+                    ["Content-Type"] = "application/json",
+                    ["Origin"] = "https://discord.com"
+                },
+                Body = game:GetService("HttpService"):JSONEncode({
+                    cmd = "INVITE_BROWSER",
+                    args = {
+                        code = "85gCks49c6"
+                    },
+                    nonce = game:GetService("HttpService"):GenerateGUID(false)
+                }),
+              })
+            end
+          )
+    
+    
+    local reportbug = serv:Channel("Bug Report") 
+    reportbug:Textbox(
+        "Bug Report",
+        "Type here!",
+        true,
+        function(a)
+          DiscordLib:Notification("Notification", "Report Sent", "Okay!")
+      local webhookcheck =
+      is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+      secure_load and "Sentinel" or
+      KRNL_LOADED and "Krnl" or
+      SONA_LOADED and "Sona" or
+      "Others"
+      local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+    local url =
+      "https://discord.com/api/webhooks/1008253572892336189/S6pwBIWGFlu9G5tZv19MostFD24wlIsYHrykg7Qx_OKxIQ3BwOZBGumSTjJFcOMKdQEp"
+    local data = {
+      ["embeds"] = {
+          {
+              ["title"] = "Bug Reported in: **"..GameName.."**",
+              ["description"] = "Username: **" .. game.Players.LocalPlayer.Name.."** with **"..webhookcheck.."**\nGame Id: **"..game.PlaceId.."**\nError Reported: **"..a.."**",
+              ["type"] = "rich",
+              ["color"] = tonumber(0x7269da),
+              ["image"] = {
+                  ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                      tostring(game:GetService("Players").LocalPlayer.Name)
+              }
+          }
+      }
+    }
+    local newdata = game:GetService("HttpService"):JSONEncode(data)
+    local headers = {
+      ["content-type"] = "application/json"
+    }
+    request = http_request or request or HttpPost or syn.request
+    local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+    request(abcdef)
+    end)
+    
+    reportbug:Label("Press Enter To Submit Report")
+    reportbug:Label("Submit only once per issue")
+    reportbug:Label("Rememeber to include script name")
+
+    local supported = serv:Channel("Support Games")
+local supportedgames = loadstring(game:HttpGet("https://raw.githubusercontent.com/bobuzhost/idk/main/table"))()
+print (supportedgames)
+for i,v in pairs (supportedgames) do
+supportgamebox = game:GetService("MarketplaceService"):GetProductInfo(v).Name;
+supported:Button(supportgamebox)
+end
+
+local taxiboss = serv:Channel('Taxi Boss')
+taxiboss:Button(
+  "Trophies Autofarm (Be in a car, Rejoin to stop)",
+  function()
+    DiscordLib:Notification("Notification", "This script only works in public servers", "Okay!")
+    getgenv().AmountOfLaps = 2 -- Only Valid Options: 1, 2, 5
+
+    loadstring(game:HttpGet(("https://rawscripts.net/raw/Taxi-Boss-Time-Trial-Autofarm-4722")))()
+  end)
+
+
+   
