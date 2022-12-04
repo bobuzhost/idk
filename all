@@ -160,3 +160,20 @@ taxiboss:Button(
 
     loadstring(game:HttpGet(("https://rawscripts.net/raw/Taxi-Boss-Time-Trial-Autofarm-4722")))()
   end)
+  local higherjump = serv:Channel("Higher Jump")
+  higherjump:Button(
+      "GUI Script",
+      function()
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/WHYSTRIV3/DumbHub-LoadStrings/main/%2B1%20Speed%20Every%20Second.lua"))()
+      end
+  )    
+
+  
+  local onefruit = serv:Channel("One Fruit")
+onefruit:Button(
+    "Autofarm Script by Xiovr",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xiovr/Roblox/main/OneFruitSimulator.lua"))()
+        end
+)    
+
